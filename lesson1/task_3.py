@@ -8,45 +8,26 @@ Python interpreters are available for many operating systems. CPython, the refer
 source software and has a community-based development model, as do nearly all of Python's other implementations. Python
  and CPython are managed by the non-profit Python Software Foundation. Привет из Харькова!
 """
-python_str = 'Python'
+python_str = 'python'
+special_symbols = ['.', ',', '-', '!', '\'', ' ', '\n']
 
 
-def char_to_list(str):
-    return [char for char in str.casefold() if char.isalnum()]
+def get_frequency_word_in_text(text, word):
+    return print(f'The word {word} occurs {text.lower().count(word)} times!!')
 
 
-def get_frequency_char(list_of_characters):
-    freq_key = ''
-    freq_value = 0
-    for key, value in list_of_characters.items():
-        if value > freq_value:
-            freq_value = value
-            freq_key = key
-    return print(f'Frequency char is {freq_key} : {freq_value}')
-
-
-def count_char_in_list(char_list):
-    char_dict = {}
-    for i in char_list:
-        keys = char_dict.keys()
-        if i in keys:
+def get_frequency_char_in_text(text):
+    char_dict = dict()
+    for i in text.lower():
+        if i not in special_symbols:
+            if i not in char_dict:
+                char_dict[i] = 1
+                continue
             char_dict[i] += 1
-        else:
-            char_dict[i] = 1
-    return char_dict
+    max_key = max(char_dict.__iter__(), key=lambda k: char_dict[k])
+    return print(f'Frequent char in the text is {max_key}, occurs {char_dict.get(max_key)} times')
 
 
-def get_frequency_word(initial_str, word_for_count):
-    count_word = 0
-    list_of_words = initial_str.split()
-    for i in list_of_words:
-        if i.__contains__(word_for_count):
-            count_word += 1
-    return print(f"The word {word_for_count} occurs {count_word} times")
+get_frequency_word_in_text(source_text, python_str)
 
-
-list_char = char_to_list(source_text)
-count_char = count_char_in_list(list_char)
-get_frequency_char(count_char)
-
-get_frequency_word(source_text, python_str)
+get_frequency_char_in_text(source_text)
