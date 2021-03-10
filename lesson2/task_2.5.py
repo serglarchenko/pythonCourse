@@ -1,18 +1,17 @@
-from functools import wraps
+import os
 
+from prettytable import PrettyTable
 
-def my_dec(func):
-    @wraps(func)
-    def inner_func(*args, **kwargs):
-        print('result')
-        return func(*args, **kwargs)
+path = r'C:\Users\Serhii_Larchenko\Desktop\ORKE\\'
+dirs = os.listdir(path)
+stats = os.stat(path)
+print(f'List dir {dirs}')
 
-    return inner_func
+table = PrettyTable()
+table.field_names = ['Mode', 'Owner', 'Group', 'Size', 'File name']
 
+for file in dirs:
+    table.add_row([os.stat(path + file).st_mode, os.stat(path + file).st_uid, os.stat(path + file).st_gid,
+                   os.stat(path + file).st_size, file])
 
-@my_dec
-def sumt(a, b):
-    return a + b
-
-
-print(sumt(2, 3))
+print(table)
