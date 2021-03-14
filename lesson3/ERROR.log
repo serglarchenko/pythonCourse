@@ -264,3 +264,9 @@ DEFAULT_BUFFER_SIZE
 2021-03-15 00:00:03,293 - INFO - None
 2021-03-15 00:00:03,293 - DEBUG - No version defined
 2021-03-15 00:00:03,293 - DEBUG - None
+2021-03-15 00:05:44,234 - WARNING - None
+2021-03-15 00:05:44,234 - WARNING - None
+2021-03-15 00:05:44,234 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-15 00:05:44,234 - INFO - None
+2021-03-15 00:05:44,235 - DEBUG - 2.1.0
+2021-03-15 00:05:44,235 - DEBUG - Package version is - None
