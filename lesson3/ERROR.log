@@ -1,0 +1,266 @@
+WARNING:root:None
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+INFO:root:None
+DEBUG:root:prettytable
+DEBUG:root:None
+WARNING:root:None
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+INFO:root:None
+DEBUG:root:2.1.0
+DEBUG:root:None
+DEBUG:root:2.1.0
+WARNING:root:None
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+INFO:root:None
+DEBUG:root:No version defined
+DEBUG:root:None
+WARNING:root:None
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+INFO:root:None
+DEBUG:root:2.1.0
+DEBUG:root:None
+WARNING:root:The io module provides the Python interfaces to stream handling. The
+builtin open function is defined in this module.
+
+At the top of the I/O hierarchy is the abstract base class IOBase. It
+defines the basic interface to a stream. Note, however, that there is no
+separation between reading and writing to streams; implementations are
+allowed to raise an OSError if they do not support a given operation.
+
+Extending IOBase is RawIOBase which deals simply with the reading and
+writing of raw bytes to a stream. FileIO subclasses RawIOBase to provide
+an interface to OS files.
+
+BufferedIOBase deals with buffering on a raw byte stream (RawIOBase). Its
+subclasses, BufferedWriter, BufferedReader, and BufferedRWPair buffer
+streams that are readable, writable, and both respectively.
+BufferedRandom provides a buffered interface to random access
+streams. BytesIO is a simple stream of in-memory bytes.
+
+Another IOBase subclass, TextIOBase, deals with the encoding and decoding
+of streams into text. TextIOWrapper, which extends it, is a buffered text
+interface to a buffered raw stream (`BufferedIOBase`). Finally, StringIO
+is an in-memory stream for text.
+
+Argument names are not part of the specification, and only the arguments
+of open() are intended to be used as keyword arguments.
+
+data:
+
+DEFAULT_BUFFER_SIZE
+
+   An int containing the default buffer size used by the module's buffered
+   I/O classes. open() uses the file's blksize (as obtained by os.stat) if
+   possible.
+
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\AppData\Local\Programs\Python\Python39\lib\io.py
+INFO:root:None
+WARNING:root:The io module provides the Python interfaces to stream handling. The
+builtin open function is defined in this module.
+
+At the top of the I/O hierarchy is the abstract base class IOBase. It
+defines the basic interface to a stream. Note, however, that there is no
+separation between reading and writing to streams; implementations are
+allowed to raise an OSError if they do not support a given operation.
+
+Extending IOBase is RawIOBase which deals simply with the reading and
+writing of raw bytes to a stream. FileIO subclasses RawIOBase to provide
+an interface to OS files.
+
+BufferedIOBase deals with buffering on a raw byte stream (RawIOBase). Its
+subclasses, BufferedWriter, BufferedReader, and BufferedRWPair buffer
+streams that are readable, writable, and both respectively.
+BufferedRandom provides a buffered interface to random access
+streams. BytesIO is a simple stream of in-memory bytes.
+
+Another IOBase subclass, TextIOBase, deals with the encoding and decoding
+of streams into text. TextIOWrapper, which extends it, is a buffered text
+interface to a buffered raw stream (`BufferedIOBase`). Finally, StringIO
+is an in-memory stream for text.
+
+Argument names are not part of the specification, and only the arguments
+of open() are intended to be used as keyword arguments.
+
+data:
+
+DEFAULT_BUFFER_SIZE
+
+   An int containing the default buffer size used by the module's buffered
+   I/O classes. open() uses the file's blksize (as obtained by os.stat) if
+   possible.
+
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\AppData\Local\Programs\Python\Python39\lib\io.py
+INFO:root:None
+WARNING:root:The io module provides the Python interfaces to stream handling. The
+builtin open function is defined in this module.
+
+At the top of the I/O hierarchy is the abstract base class IOBase. It
+defines the basic interface to a stream. Note, however, that there is no
+separation between reading and writing to streams; implementations are
+allowed to raise an OSError if they do not support a given operation.
+
+Extending IOBase is RawIOBase which deals simply with the reading and
+writing of raw bytes to a stream. FileIO subclasses RawIOBase to provide
+an interface to OS files.
+
+BufferedIOBase deals with buffering on a raw byte stream (RawIOBase). Its
+subclasses, BufferedWriter, BufferedReader, and BufferedRWPair buffer
+streams that are readable, writable, and both respectively.
+BufferedRandom provides a buffered interface to random access
+streams. BytesIO is a simple stream of in-memory bytes.
+
+Another IOBase subclass, TextIOBase, deals with the encoding and decoding
+of streams into text. TextIOWrapper, which extends it, is a buffered text
+interface to a buffered raw stream (`BufferedIOBase`). Finally, StringIO
+is an in-memory stream for text.
+
+Argument names are not part of the specification, and only the arguments
+of open() are intended to be used as keyword arguments.
+
+data:
+
+DEFAULT_BUFFER_SIZE
+
+   An int containing the default buffer size used by the module's buffered
+   I/O classes. open() uses the file's blksize (as obtained by os.stat) if
+   possible.
+
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\AppData\Local\Programs\Python\Python39\lib\io.py
+INFO:root:None
+DEBUG:root:No version defined
+DEBUG:root:None
+WARNING:root:None
+WARNING:root:None
+INFO:root:C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+INFO:root:None
+DEBUG:root:2.1.0
+DEBUG:root:None
+2021-03-14 21:35:40,253 - WARNING - None
+2021-03-14 21:35:40,254 - WARNING - None
+2021-03-14 21:35:40,254 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 21:35:40,254 - INFO - None
+2021-03-14 21:35:40,254 - DEBUG - 2.1.0
+2021-03-14 21:35:40,254 - DEBUG - None
+2021-03-14 21:38:23,932 - WARNING - None
+2021-03-14 21:38:23,933 - WARNING - None
+2021-03-14 21:38:23,933 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 21:38:23,933 - INFO - None
+2021-03-14 21:38:23,933 - DEBUG - 2.1.0
+2021-03-14 21:38:23,933 - DEBUG - None
+2021-03-14 21:38:55,349 - WARNING - None
+2021-03-14 21:38:55,349 - WARNING - None
+2021-03-14 21:38:55,350 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 21:38:55,350 - INFO - None
+2021-03-14 21:38:55,350 - DEBUG - 2.1.0
+2021-03-14 21:38:55,350 - DEBUG - None
+2021-03-14 21:41:29,111 - WARNING - None
+2021-03-14 21:41:29,111 - WARNING - None
+2021-03-14 21:41:29,111 - DEBUG - debug
+2021-03-14 21:41:29,111 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 21:41:29,111 - INFO - None
+2021-03-14 21:41:29,111 - DEBUG - 2.1.0
+2021-03-14 21:41:29,111 - DEBUG - None
+2021-03-14 23:30:03,748 - WARNING - None
+2021-03-14 23:30:03,800 - WARNING - None
+2021-03-14 23:30:03,800 - DEBUG - debug
+2021-03-14 23:30:03,800 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:30:03,800 - INFO - None
+2021-03-14 23:30:03,800 - DEBUG - 2.1.0
+2021-03-14 23:30:03,800 - DEBUG - None
+2021-03-14 23:30:38,448 - WARNING - None
+2021-03-14 23:30:38,448 - WARNING - None
+2021-03-14 23:30:38,448 - DEBUG - debug
+2021-03-14 23:30:38,448 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:30:38,448 - INFO - None
+2021-03-14 23:30:38,448 - DEBUG - 2.1.0
+2021-03-14 23:30:38,448 - DEBUG - None
+2021-03-14 23:35:43,112 - WARNING - None
+2021-03-14 23:35:43,112 - WARNING - None
+2021-03-14 23:35:43,112 - DEBUG - debug
+2021-03-14 23:35:43,112 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:35:43,112 - INFO - None
+2021-03-14 23:35:43,112 - DEBUG - 2.1.0
+2021-03-14 23:35:43,112 - DEBUG - None
+2021-03-14 23:39:05,978 - WARNING - None
+2021-03-14 23:39:05,978 - WARNING - None
+2021-03-14 23:39:05,978 - DEBUG - debug
+2021-03-14 23:39:05,978 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:39:05,978 - INFO - None
+2021-03-14 23:39:05,978 - DEBUG - 2.1.0
+2021-03-14 23:39:05,978 - DEBUG - None
+2021-03-14 23:51:10,708 - WARNING - None
+2021-03-14 23:51:10,709 - WARNING - None
+2021-03-14 23:51:10,709 - WARNING - dddddddddddddddddddddd
+2021-03-14 23:51:10,709 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:51:10,709 - INFO - None
+2021-03-14 23:51:10,709 - DEBUG - 2.1.0
+2021-03-14 23:51:10,709 - DEBUG - None
+2021-03-14 23:51:18,875 - WARNING - None
+2021-03-14 23:51:18,876 - WARNING - None
+2021-03-14 23:51:29,646 - WARNING - dddddddddddddddddddddd
+2021-03-14 23:55:59,843 - WARNING - None
+2021-03-14 23:55:59,843 - WARNING - None
+2021-03-14 23:55:59,843 - WARNING - dddddddddddddddddddddd
+2021-03-14 23:55:59,843 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:55:59,843 - INFO - None
+2021-03-14 23:55:59,844 - DEBUG - 2.1.0
+2021-03-14 23:55:59,844 - DEBUG - None
+2021-03-14 23:56:42,020 - WARNING - None
+2021-03-14 23:56:42,020 - WARNING - None
+2021-03-14 23:56:42,020 - WARNING - dddddddddddddddddddddd
+2021-03-14 23:56:42,020 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:56:42,020 - INFO - None
+2021-03-14 23:56:42,020 - DEBUG - 2.1.0
+2021-03-14 23:56:42,020 - DEBUG - Package version is - None
+2021-03-14 23:58:02,167 - WARNING - None
+2021-03-14 23:58:02,167 - WARNING - None
+2021-03-14 23:58:02,167 - INFO - C:\Users\Serhii_Larchenko\PycharmProjects\pythonCourse\venv\lib\site-packages\prettytable\__init__.py
+2021-03-14 23:58:02,167 - INFO - None
+2021-03-14 23:58:02,167 - DEBUG - 2.1.0
+2021-03-14 23:58:02,167 - DEBUG - Package version is - None
+2021-03-15 00:00:03,292 - WARNING - The io module provides the Python interfaces to stream handling. The
+builtin open function is defined in this module.
+
+At the top of the I/O hierarchy is the abstract base class IOBase. It
+defines the basic interface to a stream. Note, however, that there is no
+separation between reading and writing to streams; implementations are
+allowed to raise an OSError if they do not support a given operation.
+
+Extending IOBase is RawIOBase which deals simply with the reading and
+writing of raw bytes to a stream. FileIO subclasses RawIOBase to provide
+an interface to OS files.
+
+BufferedIOBase deals with buffering on a raw byte stream (RawIOBase). Its
+subclasses, BufferedWriter, BufferedReader, and BufferedRWPair buffer
+streams that are readable, writable, and both respectively.
+BufferedRandom provides a buffered interface to random access
+streams. BytesIO is a simple stream of in-memory bytes.
+
+Another IOBase subclass, TextIOBase, deals with the encoding and decoding
+of streams into text. TextIOWrapper, which extends it, is a buffered text
+interface to a buffered raw stream (`BufferedIOBase`). Finally, StringIO
+is an in-memory stream for text.
+
+Argument names are not part of the specification, and only the arguments
+of open() are intended to be used as keyword arguments.
+
+data:
+
+DEFAULT_BUFFER_SIZE
+
+   An int containing the default buffer size used by the module's buffered
+   I/O classes. open() uses the file's blksize (as obtained by os.stat) if
+   possible.
+
+2021-03-15 00:00:03,292 - WARNING - None
+2021-03-15 00:00:03,292 - INFO - C:\Users\Serhii_Larchenko\AppData\Local\Programs\Python\Python39\lib\io.py
+2021-03-15 00:00:03,293 - INFO - None
+2021-03-15 00:00:03,293 - DEBUG - No version defined
+2021-03-15 00:00:03,293 - DEBUG - None
