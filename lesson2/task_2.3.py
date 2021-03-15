@@ -3,11 +3,9 @@ import json
 
 CSV_FILE_PATH = 'resources/cars.csv'
 JSON_FILE_PATH = 'resources/cars.json'
-fieldnames = ('Year', 'Make', 'Model')
 
 with open(CSV_FILE_PATH) as cars:
-    file_reader = csv.DictReader(cars, fieldnames)
-    next(file_reader)
+    file_reader = csv.DictReader(cars)
     data = []
     for row in file_reader:
         data.append(row)
