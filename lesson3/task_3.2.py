@@ -7,31 +7,25 @@ import logging
 ERROR_MESSAGE = 'Package not found'
 no_version_message = 'No version defined'
 
-# parser = argparse.ArgumentParser(description='Parser')
-# parser.add_argument('-d', '-DEBUG', action='store_const', dest='loglevel', const=logging.DEBUG, default=logging.DEBUG, help='debug level')
-# parser.add_argument('--w', '--WARNING', action='store_const', dest='loglevel', const=logging.WARNING, help='warning level')
-# parser.add_argument('--i', '--INFO', action='store_const', dest='loglevel', const=logging.INFO, help='info level')
-#
-logging.basicConfig(level=logging.DEBUG, filename='ERROR.log', format='%(asctime)s - %(levelname)s - %(message)s')
+parser = argparse.ArgumentParser()
+parser.add_argument('-log', '--log', default='debug')
+args = parser.parse_args()
+levels = {
+    'debug': logging.DEBUG,
+    'info': logging.INFO,
+    'warning': logging.WARNING,
+    'error': logging.ERROR
+}
+level = levels.get(args.log.lower())
+
+logging.basicConfig(level=level, filename='ERROR.log', format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
 
 ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
-
-# parser = argparse.ArgumentParser()
-# parser.add_argument(
-#     '-d', '--debug',
-#     action="store_const", dest="loglevel", const=logging.DEBUG,
-#     default=logging.DEBUG,
-# )
-#
-# args = parser.parse_args()
-# logging.basicConfig(level=args.loglevel)
 
 def get_package_path(lib_name):
     try:
