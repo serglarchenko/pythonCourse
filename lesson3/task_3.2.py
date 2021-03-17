@@ -8,7 +8,7 @@ ERROR_MESSAGE = 'Package not found'
 no_version_message = 'No version defined'
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-log', '--log', default='debug')
+parser.add_argument('-log', '--log_level', default='debug', help='For example run - python task_3.2.py -log info')
 args = parser.parse_args()
 levels = {
     'debug': logging.DEBUG,
@@ -16,7 +16,7 @@ levels = {
     'warning': logging.WARNING,
     'error': logging.ERROR
 }
-level = levels.get(args.log.lower())
+level = levels.get(args.log_level.lower())
 
 logging.basicConfig(level=level, filename='ERROR.log', format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
