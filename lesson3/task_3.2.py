@@ -29,7 +29,7 @@ logger.addHandler(ch)
 
 def get_package_path(lib_name):
     try:
-        type(importlib.import_module(lib_name))
+        importlib.import_module(lib_name)
         logger.warning(f'{logging.warning(sys.modules[lib_name].__doc__)}')
         logger.info(f'{logging.info(sys.modules[lib_name].__file__)}')
         try:
@@ -43,4 +43,4 @@ def get_package_path(lib_name):
         logger.error(f'{logging.error(ERROR_MESSAGE)}')
 
 
-print((get_package_path("prettytable")))
+print((get_package_path("ds")))
