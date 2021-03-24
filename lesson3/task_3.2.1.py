@@ -35,16 +35,17 @@ logger.addHandler(file_handler)
 def get_package_path(lib_name):
     try:
         importlib.import_module(lib_name)
-        logger.warning(f'{logging.warning(sys.modules[lib_name].__doc__)}')
-        logger.info(f'{logging.info(sys.modules[lib_name].__file__)}')
+        module_doc = sys.modules[lib_name].__doc__
+        module_doc = module_doc if module_doc is not None else 'No documentation for this module found'
+        logger.warning(f'{module_doc}')
+        logger.info(f'{sys.modules[lib_name].__file__}')
         try:
-            logger.debug(f'Package version is - {logging.debug(sys.modules[lib_name].__version__)}')
+            logger.debug(f'Package version is - {sys.modules[lib_name].__version__}')
         except AttributeError:
-            logger.debug(f'{logging.debug(no_version_message)}')
-            return print(f"Path to lib {lib_name} is : {sys.modules[lib_name].__file__}")
+            logger.debug(f'{no_version_message}')
+            return f"Path to lib {lib_name} is : {sys.modules[lib_name].__file__}"
 
     except ModuleNotFoundError:
-        print('Package not found')
         logger.error(f'{logging.error(ERROR_MESSAGE)}')
 
 
