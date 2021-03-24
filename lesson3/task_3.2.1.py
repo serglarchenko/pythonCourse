@@ -49,9 +49,4 @@ def get_package_path(lib_name):
 
 
 if __name__ == '__main__':
-    if args.console_log:
-        console_handler.setLevel('WARN')
-    if args.file_log:
-        file_handler.setLevel('INFO')
-
-print((get_package_path("prettytable")))
+    get_package_path("prettytable")
