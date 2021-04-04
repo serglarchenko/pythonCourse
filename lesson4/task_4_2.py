@@ -13,7 +13,7 @@ class Timer:
         print(f'timer: block {self.wait_desc} executed in {round(self.end_time - self.start_time, 3)} sec')
 
 
-with Timer('doing some sleeps'):
-    time.sleep(1)
-    time.sleep(2)
-    time.sleep(3)
+# with Timer('doing some sleeps'):
+#     time.sleep(1)
+#     time.sleep(2)
+#     time.sleep(3)
