@@ -10,10 +10,9 @@ bill = Engineer('Bill', 20)
 jane = Manager('Jane', 30)
 
 
-@pytest.mark.usefixtures()
 @pytest.mark.show_money
-def test_show_company_money(create_fruit_company):
-    money = create_fruit_company.show_money()
+def test_show_company_money():
+    money = create_company().show_money()
     assert (money, 1000)
 
 
@@ -42,8 +41,14 @@ def test_get_bankrupt(create_fruit_company):
     assert (money, 0)
 
 
-
-@pytest.mark.parametrize('employee', [Employee('Joe',22), Employee('Zoe', 22)])
+# test parallel run
+@pytest.mark.parametrize('employee', [Employee('Joe', 22), Employee('Zoe', 22)])
 def test_create_some_employees(employee):
     time.sleep(1)
     assert employee.age == 22
+
+
+@pytest.hookimpl(tryfirst=True)
+@pytest.mark.usefixtures()
+def create_company():
+    return Company('Fruits', address='Ocean street, 1')
