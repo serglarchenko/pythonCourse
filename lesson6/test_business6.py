@@ -34,7 +34,7 @@ def test_fire_employee():
 
 pytestmark = pytest.mark.usefixtures('do_bankrupt')
 
-
+@pytest.mark.smoke
 @pytest.mark.usefixtures()
 def test_get_bankrupt(create_fruit_company):
     money = create_fruit_company.show_money()
@@ -42,6 +42,7 @@ def test_get_bankrupt(create_fruit_company):
 
 
 # test parallel run
+@pytest.mark.smoke
 @pytest.mark.parametrize('employee', [Employee('Joe', 22), Employee('Zoe', 22)])
 def test_create_some_employees(employee):
     time.sleep(1)
