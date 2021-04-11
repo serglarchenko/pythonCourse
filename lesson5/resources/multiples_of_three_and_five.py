@@ -53,29 +53,25 @@ def math_formula():
 def run_all_calculations_in_parallel():
     # Use multiprocessing library to run all above functions in parallel
     # Print execution time of each function
+    p = multiprocessing.Process(target=simple_iteration)
+    p4 = multiprocessing.Process(target=math_formula)
+    p2 = multiprocessing.Process(target=several_for_loops)
+    p3 = multiprocessing.Process(target=iterate_over_fifteen)
 
     with Timer('simple_iteration ->'):
-        p = multiprocessing.Process(target=simple_iteration)
         p.name.title()
         p.start()
         p.join()
     with Timer('several_for_loops ->'):
-        p2 = multiprocessing.Process(target=several_for_loops)
         p2.start()
         p2.join()
     with Timer('iterate_over_fifteen ->'):
-        p3 = multiprocessing.Process(target=iterate_over_fifteen)
         p3.start()
         p3.join()
     with Timer('math_formula ->'):
-        p4 = multiprocessing.Process(target=math_formula)
         p4.start()
         p4.join()
 
 
 if __name__ == '__main__':
     run_all_calculations_in_parallel()
-
-
-
-

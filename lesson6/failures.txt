@@ -1,0 +1,8 @@
+test_business6.py::test_fire_employee - execution time: 0.0690000057220459 
+test_business6.py::test_show_company_money - execution time: 0.015616893768310547 
+test_business6.py::test_get_bankrupt - execution time: 0.06899571418762207 
+test_business6.py::test_create_company - execution time: 0.0 
+test_business6.py::test_fire_employee - execution time: 0.08118700981140137 
+test_business6.py::test_get_bankrupt - execution time: 0.08116340637207031 
+test_business6.py::test_create_company - execution time: 0.001994609832763672 
+test_business6.py::test_show_company_money - execution time: 0.004987239837646484 

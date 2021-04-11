@@ -188,5 +188,3 @@ class Manager(Employee):
 
     def do_work(self):
         self.company.write_reports(self)
-
-
